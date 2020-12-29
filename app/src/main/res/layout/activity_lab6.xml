@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    tools:context=".Lab6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Name:"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Address:"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Mobile:"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:layout_weight="2"
+            android:inputType="phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMobile"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Gender:"
+        android:paddingLeft="22dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/rgGender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/Male"
+            android:paddingRight="70dp"
+            android:text="Male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Female"
+            android:textSize="20sp"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
